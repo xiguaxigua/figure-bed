@@ -4,29 +4,37 @@ on:
     types: [published]
 
 jobs:
-  build-and-deploy:
+  update-images:
     runs-on: ubuntu-latest
     steps:
-    - name: 检出
-      uses: actions/checkout@master
-    
-    - name: 安装依赖
-      run: yarn
+      - name: 检出
+        uses: actions/checkout@master
 
-    - name: 更新列表
-      run: node main.js
+      - name: 安装依赖
+        run: yarn
 
-    - name: 发布
-      run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: 更新列表
+        run: node main.js
 
-    - name: 清理文件
-      run: node clear.js
+      - name: 写 public key
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
-    - name: 更新 github 仓库
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: master
-        PUBLISH_DIR: .
+      - name: 发布
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: 清理文件
+        run: node clear.js
+
+      - name: 保存修改
+        run: |
+          git add .
+          git config --local user.email "xiguaxigua888@gmail.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "action auto update" -a | exit 0
+
+      - name: 更新 github 仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.TOKEN_G }}

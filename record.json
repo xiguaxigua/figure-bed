@@ -3,5 +3,10 @@
     "name": "avatar.jpeg",
     "createdAt": "2020-03-27 18:07:57",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.4/images/avatar.jpeg"
+  },
+  {
+    "name": "avatar.jpeg",
+    "createdAt": "2020-03-27 10:57:26",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.12/images/avatar.jpeg"
   }
 ]

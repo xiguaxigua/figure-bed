@@ -1,0 +1,30 @@
+{
+  "name": "figure-bed",
+  "version": "0.0.4",
+  "description": "github + github action + npm + jsdelivr = figure bed",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "clear": "node clear.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiguaxigua/figure-bed.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "figure-bad"
+  ],
+  "author": "xiguaxigua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiguaxigua/figure-bed/issues"
+  },
+  "homepage": "https://github.com/xiguaxigua/figure-bed#readme",
+  "dependencies": {
+    "fecha": "^4.2.0",
+    "fs-extra": "^9.0.0"
+  }
+}

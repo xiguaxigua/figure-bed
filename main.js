@@ -9,7 +9,7 @@ main();
 function main() {
   let images = fs.readdirSync('./images');
   removeItem(images, '.gitkeep');
-  if (!images.length) return;
+  if (!images.length) throw new Error();
 
   const newPackage = updateVersion(package);
   const newData = images.map(image => ({

@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: 检出
         uses: actions/checkout@master
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
 
       - name: 安装依赖
         run: yarn
@@ -16,13 +20,11 @@ jobs:
       - name: 更新列表
         run: node main.js
 
-      - name: 写 public key
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-
       - name: 发布
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        - uses: primer/publish@master
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: 清理文件
         run: node clear.js

@@ -8,5 +8,10 @@
     "name": "avatar.jpeg",
     "createdAt": "2020-03-27 11:21:12",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.16/images/avatar.jpeg"
+  },
+  {
+    "name": "logo.png",
+    "createdAt": "2020-03-27 11:23:15",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.17/images/logo.png"
   }
 ]

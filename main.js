@@ -17,7 +17,7 @@ function main() {
     createdAt: format(new Date(), 'YYYY-MM-DD HH:mm:ss'),
     url: `https://cdn.jsdelivr.net/npm/figure-bed@${newPackage.version}/images/${name}`
   }))
-  const newRecord = record.concat(newData)
+  const newRecord = newData.concat(record)
 
   fs.writeFileSync('./package.json', JSON.stringify(newPackage, null, 2))
   fs.writeFileSync('./record.json', JSON.stringify(newRecord, null, 2))

@@ -16,13 +16,11 @@ jobs:
       - name: 更新列表
         run: node main.js
 
-      - name: 写 public key
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-
       - name: 发布
-        run: npm publish
+        uses: pascalgn/npm-publish-action@master
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_G }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: 清理文件
         run: node clear.js

@@ -4,7 +4,7 @@ on:
     types: [published]
 
 jobs:
-  build-and-deploy:
+  update-images:
     runs-on: ubuntu-latest
     steps:
     - name: 检出
@@ -16,8 +16,14 @@ jobs:
     - name: 更新列表
       run: node main.js
 
+    - name: 写 public key
+      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+    
+    - name: 获取 npmrc
+      run: cat .npmrc
+
     - name: 发布
-      run: npm publish --access public
+      run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

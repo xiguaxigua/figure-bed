@@ -21,8 +21,6 @@ jobs:
 
       - name: 发布
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: 清理文件
         run: node clear.js

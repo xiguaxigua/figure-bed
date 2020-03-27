@@ -9,8 +9,6 @@ main();
 function main() {
   let images = fs.readdirSync('./images');
   removeItem(images, '.gitkeep');
-  console.log('images', images);
-  console.log('record', record);
   if (!images.length) return;
 
   const newPackage = updateVersion(package);
@@ -20,8 +18,6 @@ function main() {
     url: `https://cdn.jsdelivr.net/npm/figure-bed@${newPackage.version}/images/${name}`
   }))
   const newRecord = record.concat(newData)
-  console.log('newPackage', newPackage)
-  console.log('newRecord', newRecord)
 
   fs.writeFileSync('./package.json', JSON.stringify(newPackage, null, 2))
   fs.writeFileSync('./record.json', JSON.stringify(newRecord, null, 2))

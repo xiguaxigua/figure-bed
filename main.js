@@ -12,10 +12,11 @@ function main() {
   if (!images.length) return;
 
   const newPackage = updateVersion(package);
-  const newData = images.map(name => ({
-    name,
+  const { version, name } = newPackage
+  const newData = images.map(image => ({
+    name: image,
     createdAt: format(new Date(), 'YYYY-MM-DD HH:mm:ss'),
-    url: `https://cdn.jsdelivr.net/npm/figure-bed@${newPackage.version}/images/${name}`
+    url: `https://cdn.jsdelivr.net/npm/${name}@${version}/images/${image}`
   }))
   const newRecord = newData.concat(record)
 

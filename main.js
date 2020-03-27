@@ -12,15 +12,15 @@ function main() {
   if (!images.length) return;
 
   const newPackage = updateVersion(package);
-  const newData = images.map(name => ({
-    name,
+  const newData = images.map(image => ({
+    name: image,
     createdAt: format(new Date(), 'YYYY-MM-DD HH:mm:ss'),
-    url: `https://cdn.jsdelivr.net/npm/figure-bed@${newPackage.version}/images/${name}`
-  }))
-  const newRecord = newData.concat(record)
+    url: `https://cdn.jsdelivr.net/npm/${newPackage.name}@${newPackage.version}/images/${image}`,
+  }));
+  const newRecord = newData.concat(record);
 
-  fs.writeFileSync('./package.json', JSON.stringify(newPackage, null, 2))
-  fs.writeFileSync('./record.json', JSON.stringify(newRecord, null, 2))
+  fs.writeFileSync('./package.json', JSON.stringify(newPackage, null, 2));
+  fs.writeFileSync('./record.json', JSON.stringify(newRecord, null, 2));
 }
 
 function updateVersion(package) {

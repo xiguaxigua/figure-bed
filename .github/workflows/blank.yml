@@ -35,4 +35,4 @@ jobs:
       - name: 更新 github 仓库
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.TOKEN_G }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}

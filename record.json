@@ -1,5 +1,10 @@
 [
   {
+    "name": "sale.png",
+    "createdAt": "2020-04-14 08:35:28",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.30/images/sale.png"
+  },
+  {
     "name": "map-remote.png",
     "createdAt": "2020-04-14 08:06:29",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.29/images/map-remote.png"

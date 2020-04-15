@@ -1,5 +1,10 @@
 [
   {
+    "name": "font-awesome.min.css",
+    "createdAt": "2020-04-15 02:34:33",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.32/images/font-awesome.min.css"
+  },
+  {
     "name": "anime.min.js",
     "createdAt": "2020-04-15 02:30:50",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/anime.min.js"

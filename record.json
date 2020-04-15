@@ -1,5 +1,50 @@
 [
   {
+    "name": "anime.min.js",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/anime.min.js"
+  },
+  {
+    "name": "font-awesome.min.css",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/font-awesome.min.css"
+  },
+  {
+    "name": "fontawesome-webfont.eot",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/fontawesome-webfont.eot"
+  },
+  {
+    "name": "fontawesome-webfont.woff",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/fontawesome-webfont.woff"
+  },
+  {
+    "name": "fontawesome-webfont.woff2",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/fontawesome-webfont.woff2"
+  },
+  {
+    "name": "local-search.js",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/local-search.js"
+  },
+  {
+    "name": "next-boot.js",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/next-boot.js"
+  },
+  {
+    "name": "pisces.js",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/pisces.js"
+  },
+  {
+    "name": "utils.js",
+    "createdAt": "2020-04-15 02:30:50",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.31/images/utils.js"
+  },
+  {
     "name": "sale.png",
     "createdAt": "2020-04-14 08:35:28",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.30/images/sale.png"

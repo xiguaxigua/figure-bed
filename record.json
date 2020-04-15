@@ -1,5 +1,10 @@
 [
   {
+    "name": "core-ut.js",
+    "createdAt": "2020-04-15 02:48:26",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.35/images/core-ut.js"
+  },
+  {
     "name": "utils.js",
     "createdAt": "2020-04-15 02:42:59",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.34/images/utils.js"

@@ -1,5 +1,10 @@
 [
   {
+    "name": "flow.drawio",
+    "createdAt": "2020-04-20 03:35:57",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.39/images/flow.drawio"
+  },
+  {
     "name": "flow1.png",
     "createdAt": "2020-04-20 03:32:09",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.38/images/flow1.png"

@@ -1,5 +1,15 @@
 [
   {
+    "name": "ft3.png",
+    "createdAt": "2020-04-26 09:35:53",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.50/images/ft3.png"
+  },
+  {
+    "name": "ft4.png",
+    "createdAt": "2020-04-26 09:35:53",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.50/images/ft4.png"
+  },
+  {
     "name": "ft1.png",
     "createdAt": "2020-04-26 09:27:17",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.49/images/ft1.png"

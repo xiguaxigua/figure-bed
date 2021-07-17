@@ -1,5 +1,15 @@
 [
   {
+    "name": "clock.json",
+    "createdAt": "2021-07-17 15:36:54",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.59/images/clock.json"
+  },
+  {
+    "name": "images",
+    "createdAt": "2021-07-17 15:36:54",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.59/images/images"
+  },
+  {
     "name": "0275e94c-56a7-410f-bd1a-fc7483f7d14a.png",
     "createdAt": "2021-05-20 13:18:33",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.58/images/0275e94c-56a7-410f-bd1a-fc7483f7d14a.png"

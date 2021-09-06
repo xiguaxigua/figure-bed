@@ -21,6 +21,7 @@ function main() {
 
   fs.writeFileSync('./package.json', JSON.stringify(newPackage, null, 2));
   fs.writeFileSync('./record.json', JSON.stringify(newRecord, null, 2));
+  console.log('done')
 }
 
 function updateVersion(package) {

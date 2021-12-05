@@ -1,6 +1,6 @@
 {
   "name": "figure-bed",
-  "version": "0.0.62",
+  "version": "0.0.63",
   "description": "github + github action + npm + jsdelivr = figure bed",
   "main": "index.js",
   "scripts": {

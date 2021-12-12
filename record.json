@@ -1,5 +1,10 @@
 [
   {
+    "name": "favicon-32x32.png",
+    "createdAt": "2021-12-12 05:32:45",
+    "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.66/images/favicon-32x32.png"
+  },
+  {
     "name": "5.jpg",
     "createdAt": "2021-12-06 06:19:24",
     "url": "https://cdn.jsdelivr.net/npm/figure-bed@0.0.65/images/5.jpg"
